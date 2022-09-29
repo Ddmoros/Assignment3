@@ -1,0 +1,114 @@
+
+body {
+    background-color: aqua;
+}
+
+.ad {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
+.main-container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.container div{
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+
+
+@media (min-width: 280px) {
+    body {
+        background-color: rgb(215, 227, 236);
+        flex-direction: column;
+        margin-left: none;
+        margin-right: none;
+    }
+    menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media  (max-width: 760px) {
+    menu{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: none;
+        margin-right: none;
+    }
+
+    .main-container{
+       justify-content: center;
+       margin-left: none;
+       margin-right: none;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+    .container div {
+        display: flex;
+        flex-direction: column;
+        vertical-align: top;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+
+    .images {
+        width:100%;
+    }
+
+}
+
+@media  (min-width: 360px) {
+    .images {
+        height: 200px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        margin-right:20px;
+        margin-left:20px;
+    }
+}
+
+menu {
+    background-color: black;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    
+
+   
+}
+
+menu li{
+    margin: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    color:blue
+    
+}
+
+
